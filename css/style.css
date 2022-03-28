@@ -64,7 +64,13 @@ header{
     bottom: 0;
     width: 100%;
     background-color: var(--second-modal-color);
+    transition: transform 1s ease;
+    transform: translate(0,-100%);
 }
+.panel.is-active{
+    transform: translate(0,0);
+}
+
 
 .panel-btn {
     position: fixed;
